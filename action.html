@@ -1,0 +1,65 @@
+<html>
+
+    <head>
+        <h1 style="text-align: center;">
+        </h1>
+        <link rel="stylesheet" href="action.css">
+    <script>
+        function calculate()
+        {
+            var price;
+            var n=document.f.n.value;
+            n=parseFloat(n);
+            if(n<=0)
+            {
+                alert("Units should be Greater Than 0")
+                return;
+            }
+            price = 15*n;
+            document.f.T.value=price;
+        }
+    </script>
+    </head>
+    <body>
+        <header><h1>Welcome to Hescom</h1>
+        </header>
+        <ul class="navbar">
+            <li class="navitem"><a href="#Home">Home</a></li>
+            <li class="navitem"><a href="#pay">Payment</a></li>
+            <li class="navitem"><a href="#about">about</a></li>
+        </ul>
+        <section id="Home">
+            <h1>This is Home page</h1>
+        </section>
+        <section id="pay">
+            <h2 style="font-family: Arial, Helvetica, sans-serif;">Enter Credentials and Pay here</h2><br>
+            <div class="cl">
+                <form name="f">
+                    Name: <input type="text" name="name" id="name"/><br>
+                    Account no: <input type="text" name="acc" id="acc"><br>
+                    Address: <input type="text" id="add" name="add"><br>
+                    No of Units: <input type="number" id="n" name="n"><br><br>
+                    <input type="button" onclick="calculate()" value="submit" style="margin-left: 100px;"><br>
+                    Total Price: <input type="text" name="T" id="T" value=""><br><br>
+                </form>
+            </div>
+        </section>
+        <section id="about">
+            <h2 style="font-family: Arial, Helvetica, sans-serif;">This is About Section.</h2>
+            <p>
+                <li>Jurisdiction: HESCOM serves a specific geographic area in Karnataka and is responsible for the distribution of electricity within its jurisdiction.</li><br>
+
+                <li>Functions: The primary functions of HESCOM include the distribution of electricity to consumers, handling billing and payments, addressing consumer complaints, and maintaining the electricity distribution infrastructure.</li><br>
+
+<li>Website and Online Services: HESCOM typically has an official website where consumers can access services such as online bill payment, checking billing details, and lodging complaints.</li><br>
+
+<li>Customer Service: HESCOM provides customer service through various channels, including helpline numbers, email support, and sometimes even through online chat services.</li><br>
+
+<li>Tariffs and Billing: The company sets electricity tariffs for different categories of consumers, and it issues regular bills to consumers based on their electricity consumption.</li><br>
+
+<li>Regulatory Compliance: Like other electricity distribution companies, HESCOM operates in accordance with regulations set by the regulatory authorities, such as the Karnataka Electricity Regulatory Commission (KERC).</li><br>
+            </p>
+        </section>
+        <footer>&copy; 2023 All Rights Reserved</footer>
+    </body>
+</html>
